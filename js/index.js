@@ -74,12 +74,12 @@ function saveSession (data, saveSession){
     if(true){
         localStorage.setItem("session", data); //O localStorage serve pra salvar as informações que queremos que permaneçam na aplicação, se fecharmos o site, fica salvo, não se perde
     }
-    sessionStorage.setItem("logged, data"); // O sessionStorage usamos para salvar na seção, não fica salvo depois que fecha o site, é perdido
+    sessionStorage.setItem("logged", data); // O sessionStorage usamos para salvar na seção, não fica salvo depois que fecha o site, é perdido
 }
 
 function checkLogged(){
     if(session){
-        session.setItem("logged", session);
+        sessionStorage.setItem("logged", session);
         logged = session;
     }
     if(logged){
